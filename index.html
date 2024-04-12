@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Hangman Game</h1>
+      <div id="hangman">
+        <svg
+          width="400"
+          height="400"
+          viewBox="0 0 300 400"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <!-- SVG lines for different parts of hangman based on incorrect guesses -->
+        </svg>
+      </div>
+      <p id="wordToGuess"></p>
+      <p id="guesses"></p>
+      <div id="container2">
+        <input type="text" id="guessInput" maxlength="1" uppercase />
+        <button onclick="guess()">Guess</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
